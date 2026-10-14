@@ -192,7 +192,7 @@ implementation
 uses CEFuncProc, CEDebugger,debughelper, debugeventhandler, MemoryBrowserFormUnit,
      MainUnit,kerneldebugger, AdvancedOptionsUnit ,formFoundcodeListExtraUnit,
      MainUnit2, ProcessHandlerUnit, Globals, Parsers, DBK32functions, symbolhandler,
-     DebuggerInterfaceAPIWrapper, DBVMDebuggerInterface, breakpointtypedef;
+     DebuggerInterfaceAPIWrapper, DBVMDebuggerInterface, breakpointtypedef, FunctionBoundaries;
 
 
 
@@ -600,6 +600,7 @@ begin
   li:=FoundCodeList.Items.Add;
   li.caption:='1';
   li.SubItems.add(opcode);
+  li.SubItems.add(GetFunctionDescription(address));
   li.data:=coderecord;
 
   if miFindWhatAccesses.Checked then //add it

@@ -212,6 +212,10 @@ object FoundCodeDialog: TFoundCodeDialog
         item
           Caption = 'Instruction'
           Width = 250
+        end      
+        item
+          Caption = 'Function'
+          Width = 200
         end>
       HideSelection = False
       MultiSelect = True
