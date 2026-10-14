@@ -31,7 +31,7 @@ uses
   {$ifdef darwin}
   ,macportdefines
   {$endif},
-  {$ifdef laztrunk}
+  {$ifndef lazold}
   LazFileUtils,
   {$endif}
   betterControls;

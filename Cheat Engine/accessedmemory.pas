@@ -7,7 +7,7 @@ interface
 uses
   {$ifdef windows}windows, {$endif}Classes, SysUtils, FileUtil, laz.VirtualTrees, Forms, Controls, Graphics,
   Dialogs, StdCtrls, ExtCtrls, Menus, ComCtrls, genericHotkey, DBK32functions,
-  commonTypeDefs, newkernelhandler, betterControls,AvgLvlTree, {$ifdef laztrunk}AVL_Tree{$else}laz_avl_Tree{$endif};
+  commonTypeDefs, newkernelhandler, betterControls,AvgLvlTree, {$ifndef lazold}AVL_Tree{$else}laz_avl_Tree{$endif};
 
 resourcestring
   rsAMError = 'Error';

@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
   ExtCtrls, math, LuaCanvas, FPImage, FPCanvas, FPImgCanv, FPReadPNG, FPWritePNG
-  {$ifdef laztrunk}
+  {$ifndef lazold}
   , LazFileUtils
   {$endif}
   , betterControls;

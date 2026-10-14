@@ -949,7 +949,7 @@ end;
 
 
 initialization
-   {$ifdef laztrunk}
+   {$ifndef lazold}
    luaclass_register(TCustomVirtualStringTree,  virtualstringtree_addMetaData);
    {$else}
    luaclass_register(TVirtualStringTree,  virtualstringtree_addMetaData);
