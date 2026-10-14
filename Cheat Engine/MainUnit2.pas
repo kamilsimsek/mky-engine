@@ -32,7 +32,7 @@ const
   strMyCheatTables='My Mod Tables';
   strSpeedHack='Speedmodifier';
 {$else}
-  strCheatEngine='Cheat Engine';
+  strCheatEngine='Mustafa Kemal Yasan Engine';
   strCheatTable='Cheat Table';
   strCheatTableLower='cheat table';
   strCheat='Cheat';
