@@ -9,7 +9,7 @@ uses
   windows, activex, comobj,
   {$endif}
   lclintf, Classes, SysUtils,forms, controls, LMessages,
-  ExtCtrls, Graphics, FileUtil, Dialogs, math;
+  ExtCtrls, Graphics, FileUtil, LazFileUtils, Dialogs, math;
 
 type TADWindow=class(TCustomForm)
   private
